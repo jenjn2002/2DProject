@@ -9,7 +9,6 @@ public class Stats : ScriptableObject
     public LayerMask playerLayer;
 
     [Header("MOVEMENT")]
-    [Range(120,480)]
     public float speed;
     
     //Gia toc

@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class BGController : MonoBehaviour
 {
-    public GameObject playerPosition;
-    
+    public float parallaxFactor = 0.5f;
+
 
     private void Update()
+    { 
+       
+    }
+    private void FixedUpdate()
     {
-        transform.position = playerPosition.transform.position;
-        Vector3 bgPosition = transform.position;
+        Vector3 bgPosition = Camera.main.transform.position;
         bgPosition.y = 0;
+        bgPosition.z = 0;
         transform.position = bgPosition;
     }
 }
