@@ -15,6 +15,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  speed: 480
+  speed: 1080
   acceleration: 120
   deceleration: 30

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour, IPlayerController
 {
+    public static PlayerController Instance { get; private set; }
     public Stats stats;
     public Rigidbody2D rb;
     public FrameInput frameInput;
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        Instance = this;
     }
 
     public void Update()
